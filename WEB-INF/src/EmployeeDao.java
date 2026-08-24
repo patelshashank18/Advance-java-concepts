@@ -9,8 +9,7 @@ import java.sql.PreparedStatement;
 public class EmployeeDao {
 
     /** Database URL */
-    private static final String URL =
-            "jdbc:mysql://localhost:3306/EmployeeData";
+    private static final String URL = "jdbc:mysql://localhost:3306/EmployeeData";
 
     /** Database username */
     private static final String USER = "root";
@@ -24,8 +23,8 @@ public class EmployeeDao {
     public boolean saveEmployee(Employee employee) {
 
         String sql = "INSERT INTO employee "
-                   + "(first_name, last_name, email, phone, salary) "
-                   + "VALUES (?, ?, ?, ?, ?)";
+                + "(first_name, last_name, email, phone, salary) "
+                + "VALUES (?, ?, ?, ?, ?)";
 
         try {
 
@@ -33,12 +32,10 @@ public class EmployeeDao {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             /** Create database connection */
-            Connection connection =
-                    DriverManager.getConnection(URL, USER, PASSWORD);
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
             /** Prepare SQL statement */
-            PreparedStatement statement =
-                    connection.prepareStatement(sql);
+            PreparedStatement statement = connection.prepareStatement(sql);
 
             /** Set employee values */
             statement.setString(1, employee.getFirstName());
