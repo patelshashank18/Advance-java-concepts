@@ -39,31 +39,24 @@ MySQL Database
 ## Project Structure
 
 
-EmployeeRegistration
+Advance-java-concepts
 │
 ├── lib
 │   └── mysql-connector-j.jar
 │
 ├── README.md
 │
-├── sql
-│   └── employee_registration.sql
-│
 ├── src
-│   └── com
-│       └── Employee
-│           ├── dao
-│           │   └── EmployeeDao.java
-│           │
-│           └── servlet
-│               └── EmployeeServlet.java
+│    ├── dao
+│      └── EmployeeDao.java
+│    └── servlet
+│      └── EmployeeServlet.java
 │
 └── WebContent
     ├── employee-registration.jsp
     │
     └── WEB-INF
         └── web.xml
-
 
 ---
 
