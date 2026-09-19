@@ -107,7 +107,7 @@ employee
 Open MySQL and run the SQL file:
 
 
-sql/employee_registration.sql
+sql/employee.sql
 
 Or execute:
 
@@ -244,7 +244,7 @@ Make sure the MySQL server is running.
 Execute:
 
 
-sql/employee_registration.sql
+sql/employee.sql
 
 
 ### Step 3 – Configure Database Credentials
@@ -323,7 +323,7 @@ Handles the HTTP POST request and receives form data.
 
 Handles the database connection and employee insertion.
 
-### `employee_registration.sql`
+### `employee.sql`
 
 Creates the database and employee table.
 
